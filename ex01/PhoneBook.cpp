@@ -10,17 +10,28 @@ const Contact&	PhoneBook::getContact(int index) const
 	return (_contact[index]);
 }
 
-void	setIndex(int newIndex)
+bool	PhoneBook::PhoneBookAdd()
 {
-	this->index = newIndex;
-}
+	static int index = 0;
+	std::string	line;
 
-bool	PhoneBook::PhoneBookAdd(int index)
-{
+	getline(std::cin, line);
+	_contact[index % 8].setName(line);
+	getline(std::cin, line);
+	_contact[index % 8].setLastname(line);
+	getline(std::cin, line);
+	_contact[index % 8].setUsername(line);
+	getline(std::cin, line);
+	_contact[index % 8].setTelephoneNumber(line);
+	getline(std::cin, line);
+	_contact[index % 8].setDarkSecret(line);
+	setContact(_contact[index], index);
 
+	return (true);
 }
 
 bool	PhoneBook::PhoneBookSearch(void)
 {
 
+	return (true);
 }

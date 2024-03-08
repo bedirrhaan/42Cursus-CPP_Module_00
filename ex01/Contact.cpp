@@ -22,7 +22,7 @@ void	Contact::setTelephoneNumber(std::string tel)
 
 void	Contact::setDarkSecret(std::string secret)
 {
-	this->secret;
+	this->secret = secret;
 }
 
 std::string Contact::getName(void)

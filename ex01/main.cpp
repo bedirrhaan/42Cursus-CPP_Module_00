@@ -17,7 +17,7 @@ int main(void)
 		}
 		if (line == "SEARCH")
 		{
-			if (!_phonebook.PhoneBookSearch());
+			if (!_phonebook.PhoneBookSearch())
 				return (std::cout << "Error!" << std::endl, -1);
 		}
 	}
