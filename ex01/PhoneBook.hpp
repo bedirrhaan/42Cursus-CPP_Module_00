@@ -11,8 +11,8 @@ class PhoneBook
 		const Contact&	getContact(int index) const;
 		bool			PhoneBookAdd(void);
 		bool			PhoneBookSearch(void);
-
 };
 
+void	print_title(void);
 
 #endif
