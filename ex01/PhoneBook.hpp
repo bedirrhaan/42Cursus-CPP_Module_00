@@ -5,7 +5,7 @@
 class PhoneBook
 {
 	private:
-		Contact	_contact[7];
+		Contact	_contact[8];
 	public:
 		void			setContact(const Contact& newContact, int index);
 		const Contact&	getContact(int index) const;
