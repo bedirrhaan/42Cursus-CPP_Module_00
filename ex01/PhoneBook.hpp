@@ -14,7 +14,4 @@ class PhoneBook
 		bool			searchPrint(void);
 };
 
-std::string		length_control(std::string string);
-void			print_title(void);
-
 #endif
